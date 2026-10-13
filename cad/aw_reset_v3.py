@@ -1,6 +1,6 @@
 """RESET button v3, final (Austin, 2026-10-09): the 3-notch v3 test cap,
 0.90 shorter than v2 (2.80 total), without the test notches.
-Replaces stl/aw2/reset-button.stl. Run: .venv/bin/python cad/aw_reset_v3.py
+Replaces stl/aw2/aw-reset-plunger.stl. Run: .venv/bin/python cad/aw_reset_v3.py
 """
 import hashlib
 import aw_reset_v2 as V2

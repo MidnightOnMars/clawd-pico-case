@@ -12,7 +12,7 @@ M,P,J=R.M,R.P,R.J
 
 SHAVE=.05   # AW-RESET-V2: per side, Austin's ask
 POST_R=.5   # AW-RESET-V2: clears the hole's 1.05 corners
-OUT=R.ROOT/'stl/aw2/reset-button.stl'
+OUT=R.ROOT/'stl/aw2/aw-reset-plunger.stl'
 
 def cap():
     fw,fd,t=P.CAP_FLANGE_W/2,P.CAP_FLANGE_D/2,R.A.CAP_FLANGE_T
