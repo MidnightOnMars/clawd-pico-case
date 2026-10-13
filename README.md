@@ -18,10 +18,10 @@ All PETG. 0.16 mm layers, 4 walls, no supports, no brim, no raft. Lid:
 elephant-foot compensation 0.15. Don't rotate the parts; they are already the
 right way up (lid face down, base floor down, caps flange down).
 
-**"Buttons" means `button.stl`** (the four front caps by the screen). The RESET button is a different part, only for the Atomic Wedgie. Don't print it unless someone asks for the Atomic Wedgie or the RESET button by name.
+**"Buttons" means `button.stl`** (the four front caps by the screen). The RESET plunger (`stl/atomic-wedgie/aw-reset-plunger.stl`) is a different part. Its only use: one, in black, for the red Atomic Wedgie base. Don't print it unless someone asks for the Atomic Wedgie or the RESET plunger by name.
 
 **Atomic Wedgie** (RP2040-Plus with a battery): red base with a battery
-channel and a black RESET button. See [`stl/atomic-wedgie/`](stl/atomic-wedgie/README.md).
+channel and a black RESET plunger. See [`stl/atomic-wedgie/`](stl/atomic-wedgie/README.md).
 
 `full-set.stl` is all seven parts on one plate, in one colour. Skip it for a
 coloured case.

@@ -20,6 +20,6 @@ coloured case.
 Everything else in `stl/` is old test parts. Don't print it.
 Change log: [HISTORY.md](HISTORY.md).
 
-**"Buttons" means `button.stl`** (the four front caps by the screen). The RESET button is a different part, only for the Atomic Wedgie. Don't print it unless someone asks for the Atomic Wedgie or the RESET button by name.
+**"Buttons" means `button.stl`** (the four front caps by the screen). The RESET plunger (`stl/atomic-wedgie/aw-reset-plunger.stl`) is a different part. Its only use: one, in black, for the red Atomic Wedgie base. Don't print it unless someone asks for the Atomic Wedgie or the RESET plunger by name.
 
-Atomic Wedgie (RP2040-Plus with a battery): different base, red, plus a RESET button. See `../atomic-wedgie/`.
+Atomic Wedgie (RP2040-Plus with a battery): red base plus one black RESET plunger. See `../atomic-wedgie/`.
