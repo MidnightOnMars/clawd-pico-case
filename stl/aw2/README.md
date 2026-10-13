@@ -1,11 +1,6 @@
 # Atomic Wedgie base v2 (RP2040-Plus with a battery)
 
-Old test. Print from `stl/atomic-wedgie/`.
+**Old test. Don't print. For an Atomic Wedgie use [`stl/atomic-wedgie/`](../atomic-wedgie/README.md).**
 
-**`aw-reset-plunger.stl` is not a front button.** It is the small RESET plunger that sits in this base only. If someone asks for "buttons", they mean the four front caps, `stl/current/button.stl`. Print the RESET button only for an Atomic Wedgie, one per base.
-
-Red PETG.
-- `base-floor-down.stl`: battery plug slot to the top (no catch on that end), BOOT pin hole, RESET hole.
-- `aw-reset-plunger.stl`: RESET button v3 (black), flange down, no brim or raft. Drop it in from inside before the board.
-
-Lid, joystick and buttons from `stl/current/`.
+Same files as `stl/atomic-wedgie/` (red base, black RESET plunger). The
+plunger is not a front button; "buttons" means `stl/current/button.stl`.

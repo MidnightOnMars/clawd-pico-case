@@ -77,9 +77,9 @@ What we do not copy is their files and their styling choices.
 | `prints/` | Print log: what was printed, what fit, what did not |
 | `measurements/` | Caliper photos and datasheet drawings |
 
-## Development history (superseded by v1.0)
+## Old development history (before v1.0, don't use)
 
-**Latest: low-lid V3 review, with the lid 1 mm above the glass.**
+**Last pre-v1.0 review: low-lid V3, with the lid 1 mm above the glass.**
 [Interactive model](renders/v3-low/viewer.html) · [Low-lid design and limitations](reports/2026-09-25-low-lid-experiments.md).
 Rear retaining tab replaces the failed side-tab experiment. Not print-approved.
 `stl/print/` still contains the OLD tall draft; do not print those files.
@@ -126,6 +126,8 @@ python -m venv .venv
 This checks the v1.0 geometry, then writes `stl/v1.0/` and `renders/v1.0/`
 (STEP, viewer, validation and hashes). `cad/build.py` and `stl/print/` belong
 to the old R4/R5 prototype. Do not print them.
+
+`stl/current/` is written by `.venv/bin/python cad/current.py`.
 
 ## License
 

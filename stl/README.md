@@ -6,8 +6,8 @@ Every other file and folder in `stl/` is an old test, kept as the design
 record. `print/` and the loose STLs in this folder are the first prototype
 (2026-09-25), not the current case.
 
-Built outputs only; run `.venv/bin/python cad/build.py` from repository root.
-Never hand-edit meshes. MIT, like the original source.
+Old prototype notes below. `stl/current/` is built by `cad/current.py`;
+`print/` and the loose STLs by `cad/build.py`. Never hand-edit meshes. MIT, like the original source.
 
 `print/` holds base, lid, four button caps, and default joystick cap in print
 orientation. Separate button solids on the bed. `fit_samples/` holds alternate
