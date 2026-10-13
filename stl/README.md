@@ -1,5 +1,7 @@
 **To print a case, use [`current/`](current/README.md). Nothing else here.**
 
+**"Buttons" means `button.stl`** (the four front caps by the screen). The RESET button is a different part, only for the Atomic Wedgie. Don't print it unless someone asks for the Atomic Wedgie or the RESET button by name.
+
 Every other file and folder in `stl/` is an old test, kept as the design
 record. `print/` and the loose STLs in this folder are the first prototype
 (2026-09-25), not the current case.
