@@ -11,6 +11,9 @@ Files are in [`stl/current/`](stl/current/README.md). One case:
 | [`joystick.stl`](stl/current/joystick.stl) | 1 | Grey |
 | [`button.stl`](stl/current/button.stl) | 4 | 2 grey (middle two), 1 green (top right), 1 red (bottom right) |
 
+Button positions: hold the case sideways, screen facing you, joystick on
+the left. The four buttons are the column on the right.
+
 All PETG. 0.16 mm layers, 4 walls, no supports, no brim, no raft. Lid:
 elephant-foot compensation 0.15. Don't rotate the parts; they are already the
 right way up (lid face down, base floor down, caps flange down).

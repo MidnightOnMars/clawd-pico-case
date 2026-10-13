@@ -14,6 +14,9 @@ battery plug and wire, a BOOT pin hole, and a RESET plunger (`aw-reset-plunger.s
 | `../current/joystick.stl` | 1 | Grey |
 | `../current/button.stl` | 4 | 2 grey (middle two), 1 green (top right), 1 red (bottom right) |
 
+Button positions: hold the case sideways, screen facing you, joystick on
+the left. The four buttons are the column on the right.
+
 All PETG. 0.16 mm layers, 4 walls, no supports, no brim, no raft. Don't
 rotate the parts (base floor down, caps flange down).
 
