@@ -26,7 +26,7 @@ Cut the cable short, leaving the plug end. Strip the tip of each of the 4 wires.
 
 Take out the LCD board. Turn it face down so the header pins point at you, USB at the top.
 
-Solder each wire to the Pico pin shown. Count pins from the USB end.
+Each wire goes into the header socket shown. No solder. Count from the USB end.
 
 | Wire | Signal | Pico pin |
 |---|---|---|
@@ -38,3 +38,12 @@ Solder each wire to the Pico pin shown. Count pins from the USB end.
 <!-- TODO: redraw the wiring guide as a clean diagram for the one-pager -->
 
 ![Board face down with wiring guide](photos/04-board-and-wiring-guide.jpg)
+
+## 5. Push in white and yellow
+
+Twist the strands at each wire tip tight, so each tip acts like one solid wire.
+
+Push white into socket 3 (GND) and yellow into socket 5 (3V3) on the USB-side row. Do both together.
+Then tape the wires down, once on each side.
+
+![White and yellow in the header](photos/05-white-yellow-in-header.jpg)
