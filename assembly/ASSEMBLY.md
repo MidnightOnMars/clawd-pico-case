@@ -28,7 +28,7 @@ Wire order across the plug: white, yellow, black, red.
 
 ## 3. Cut and strip the wires
 
-Keep one plug. Cut the wires about 2 in (5 cm) from it. Strip off as much as a header socket is deep, about 1/4 in (6 mm), so the bare wire goes all the way down.
+Keep one plug. Cut the wires about 2 in (5 cm) from it. Strip off as much as a header socket is deep, about 5 mm (between 1/8 and 1/4 in), so the bare wire goes all the way down.
 
 ![Cut and stripped](photos/03-cut-and-stripped-a.jpg)
 ![Cut and stripped, other view](photos/03-cut-and-stripped-b.jpg)
