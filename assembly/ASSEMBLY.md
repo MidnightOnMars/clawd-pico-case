@@ -44,6 +44,17 @@ Each wire goes into the header socket shown. No solder. Count from the USB end.
 Twist the strands at each wire tip tight, so each tip acts like one solid wire.
 
 Push white into socket 3 (GND) and yellow into socket 5 (3V3) on the USB-side row. Do both together.
-Then tape the wires down, once on each side.
 
 ![White and yellow in the header](photos/05-white-yellow-in-header.jpg)
+
+## 6. Tape over the wires
+
+Put a small piece of electrical tape over the sockets, right on top of the wires, to hold them in.
+
+![Tape over white and yellow](photos/06-tape-over-wires.jpg)
+
+## 7. Poke the holes open
+
+Push a stiff breadboard jumper wire through the tape into each covered socket. This opens the holes so the Pico pins fit later. The tape still holds the wires.
+
+![Poking holes through the tape](photos/07-poke-holes-through-tape.jpg)
