@@ -58,3 +58,17 @@ Put a small piece of electrical tape over the sockets, right on top of the wires
 Push a stiff breadboard jumper wire through the tape into each covered socket. This opens the holes so the Pico pins fit later. The tape still holds the wires.
 
 ![Poking holes through the tape](photos/07-poke-holes-through-tape.jpg)
+
+## 8. Same on the other row: black and red
+
+Push black into socket 6 and red into socket 7. Tape over them. Poke the holes open with the jumper wire.
+
+![Black and red, with guide](photos/08-black-red-guide.jpg)
+![Black and red in the header](photos/08-black-red-in-header.jpg)
+![Black and red taped](photos/08-black-red-taped.jpg)
+
+## 9. Header ready
+
+All 4 wires in, taped, holes open. Ready for the Pico W.
+
+![Header ready for the Pico](photos/09-header-ready.jpg)
