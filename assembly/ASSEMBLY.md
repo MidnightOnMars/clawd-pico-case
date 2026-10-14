@@ -99,7 +99,7 @@ If anything sticks out, do it again. It won't fit the case.
 
 ## 11. Test the boards
 
-Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. Always hold it: many Picos ship with software on them and won't show up without BOOTSEL. Some come blank and work either way. Use a data cable, not a charge-only one. Go to wedgie.dev/test in Chrome and click Test it. Don't unplug while it runs.
+Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. Always hold it. Many Picos come with software installed and won't show up without BOOTSEL. Our pink Picos do: out of the box they flash a green light. Some come blank and work either way. Use a data cable, not a charge-only one. Go to wedgie.dev/test in Chrome and click Test it. Don't unplug while it runs.
 
 First time on this computer? The test page has a one-time setup (a Mac profile, or one command on Linux) so Chrome stops asking about every new Pico.
 
