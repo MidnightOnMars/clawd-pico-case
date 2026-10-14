@@ -2,33 +2,45 @@
 
 Photos in order. Draft. This becomes a one-page guide later.
 
-## 1. Cable and tools
+## What you need
 
-You need a 4-wire cable with a small plug on one end, plus wire cutters and strippers.
+- Screen board (Waveshare Pico-LCD-1.3)
+- Pico (the red USB-C RP2040 board)
+- Trust M chip board
+- 4-wire cable (white, yellow, black, red) with a small plug
+- Case: white lid, black base, joystick cap, 4 buttons (1 green, 2 gray, 1 red)
+- Wire cutters and strippers, electrical tape, a stiff breadboard jumper wire, tweezers
+- A computer with Chrome, and a USB-C cable
+
+## 1. Cable and tools
 
 ![Cable and strippers](photos/01-cable-and-strippers.jpg)
 
-## 2. Plug the cable into the Trust M board
+![Cable and strippers](photos/01-cable-and-strippers.jpg)
 
-Wire order across the plug, top to bottom in the photo: white, yellow, black, red.
+## 2. How the plug fits the Trust M
+
+This is just to show the fit. You plug it in for real at step 10.
+
+Wire order across the plug: white, yellow, black, red.
 
 ![Cable plugged into Trust M](photos/02-cable-into-trust-m.jpg)
 
 ## 3. Cut and strip the wires
 
-Cut the cable short, leaving the plug end. Strip the tip of each of the 4 wires.
-<!-- TODO: how long to cut, how much to strip -->
+Keep one plug. Cut the wires about 2 in (5 cm) from it. Strip about 1/8 in (3 mm) off each tip.
+<!-- TODO: lengths are read off the photo grid; Austin to confirm -->
 
 ![Cut and stripped](photos/03-cut-and-stripped-a.jpg)
 ![Cut and stripped, other view](photos/03-cut-and-stripped-b.jpg)
 
 ## 4. Lay out the screen board and the wiring guide
 
-Take out the LCD board. Turn it face down so the header pins point at you, USB at the top.
+Take out the screen board. Turn it face down, sockets up, USB mark at the top.
 
-Each wire goes into the header socket shown. No solder. Count from the USB end.
+Each wire pushes into a socket. No solder. Count sockets from the USB end.
 
-| Wire | Signal | Pico pin |
+| Wire | Signal | Socket |
 |---|---|---|
 | White | GND | 3rd on the USB-side row (pin 38) |
 | Yellow | 3.3 V | 5th on that row (pin 36) |
@@ -69,13 +81,15 @@ Push black into socket 6 and red into socket 7. Tape over them. Poke the holes o
 
 ## 9. Header ready
 
-All 4 wires in, taped, holes open. Ready for the Pico W.
+All 4 wires in, taped, holes open. Ready for the Pico.
 
 ![Header ready for the Pico](photos/09-header-ready.jpg)
 
 ## 10. Stack the boards
 
-Wedge the Trust M board in between the Pico and the screen board. Push the Pico all the way into the header so it's flush. No pins or wires sticking out, chip fully inside.
+Plug the cable into the Trust M. Lay the Trust M at an angle on the back of the screen board.
+
+Push the Pico into the sockets, USB-C at the same end as the screen board's USB mark. The Trust M ends up wedged between the two boards. Push the Pico all the way in so it's flush. No pins or wires sticking out, chip fully inside.
 
 If anything sticks out, do it again. It won't fit the case.
 
@@ -85,7 +99,7 @@ If anything sticks out, do it again. It won't fit the case.
 
 ## 11. Test the boards
 
-Hold BOOTSEL and plug in the USB. Go to wedgie.dev/test and click Test it. Don't unplug while it runs.
+Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. Go to wedgie.dev/test and click Test it. Don't unplug while it runs.
 
 Wait for the first 3 to go green: Board, Firmware, Chip. That means everything is connected. Unplug it. The other 3 (Shake, Buttons, Colors) come after the case is on.
 
@@ -95,6 +109,8 @@ Wait for the first 3 to go green: Board, Firmware, Chip. That means everything i
 ![Installing the firmware](photos/11-test-firmware.jpg)
 
 ## 12. Pick the base
+
+The base colour says what's inside:
 
 - Red: Pico W with a battery (the Atomic wedgie)
 - Black: Trust M chip
@@ -106,7 +122,7 @@ This build is Trust M, so black.
 
 ## 13. Peel the screen protector
 
-Pull the blue tab.
+Pull the blue tab off the screen.
 
 ![Screen protector off](photos/13-screen-protector.jpg)
 
@@ -138,14 +154,14 @@ Lay the lid face down at the edge of the mat, so the buttons can hang out the fr
 
 ## 17. Boards into the base
 
-Push the stacked boards into the black base. The screen board lies flat across the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
+Push the stacked boards, screen up, into the black base. The USB-C goes to the base's hole. The screen board lies flat on the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
 
 ![USB centered in the hole](photos/17-usb-centered.jpg)
 ![Boards in the base](photos/17-in-base.jpg)
 
 ## 18. Close the case
 
-Lower the base, screen side down, into the lid. Line it up. Keep it upside down and press lid and base together, hard, until they snap. It's tight on purpose, so it won't fall apart.
+Flip the base over and lower it, screen side down, into the lid (still face down with the buttons in). Line it up. Keep it upside down and press lid and base together, hard, until they snap. It's tight on purpose, so it won't fall apart.
 
 ![Lowering into the lid](photos/18-lower-into-lid.jpg)
 ![Pressed closed](photos/18-press-closed.jpg)
@@ -158,16 +174,18 @@ Press every button. Push the joystick every way and straight in. Each one should
 
 ## 20. Full test
 
-Plug it in. Go to wedgie.dev/test and click Test only (skips the wipe and firmware). Press green on the wedgie to let the computer in.
+Plug it in. It shows "No software". Go to wedgie.dev/test and click Test only (skips the wipe and firmware).
+
+The wedgie shows a red FULL CONTROL warning. Press green on the wedgie to let the computer in.
 
 - Chip: wait for the green check.
 - Shake: shake, tap, squeeze, lightly drop it on each side until the counter stops. It hammers the chip and the Pico to catch loose wires.
 - Buttons: press each one it asks for. The joystick must not hit the wrong button.
 - Colors: each press shows a color. Check for scratches, dead pixels, or a line of printer plastic. Clean it off.
 
-PASS, then "No software" on the screen: done. Unplug it.
+PASS on the wedgie and the page: done. Unplug it.
 
-<!-- TODO: the red FULL CONTROL screen (photo 20-full-control): what should a builder press? -->
+<!-- TODO: Austin to confirm green is the right answer on the FULL CONTROL screen -->
 
 ![Plugged in](photos/20-booted.jpg)
 ![Test only](photos/20-test-only.jpg)
