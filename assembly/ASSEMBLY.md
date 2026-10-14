@@ -29,7 +29,6 @@ Wire order across the plug: white, yellow, black, red.
 ## 3. Cut and strip the wires
 
 Keep one plug. Cut the wires about 2 in (5 cm) from it. Strip about 1/8 in (3 mm) off each tip.
-<!-- TODO: lengths are read off the photo grid; Austin to confirm -->
 
 ![Cut and stripped](photos/03-cut-and-stripped-a.jpg)
 ![Cut and stripped, other view](photos/03-cut-and-stripped-b.jpg)
@@ -148,9 +147,7 @@ Check: it stays on upside down, and it clicks up, down, left, right and in. The 
 
 ## 16. Buttons into the lid
 
-Lay the lid face down at the edge of the mat, so the buttons can hang out the front. Drop the buttons in with tweezers: green, gray, gray, red.
-
-<!-- TODO: confirm green sits over A and red over Y -->
+Lay the lid face down at the edge of the mat, so the buttons can hang out the front. Drop the buttons in with tweezers: green, gray, gray, red. Green sits over the screen board's A button, red over Y.
 
 ![Placing buttons with tweezers](photos/16-buttons-tweezers.jpg)
 ![Buttons placed](photos/16-buttons-placed.jpg)
@@ -191,7 +188,6 @@ PASS on the wedgie and the page: done. Unplug it.
 
 Need to wipe it again after the case is closed? Press BOOTSEL through the small hole in the base with a paperclip while you plug it in.
 
-<!-- TODO: Austin to confirm green is the right answer on the FULL CONTROL screen -->
 
 ![Plugged in](photos/20-booted.jpg)
 ![Test only](photos/20-test-only.jpg)
