@@ -89,7 +89,7 @@ All 4 wires in, taped, holes open. Ready for the Pico.
 
 Plug the cable into the Trust M. Lay the Trust M at an angle on the back of the screen board.
 
-Push the Pico into the sockets, USB-C at the same end as the screen board's USB mark. The Trust M ends up wedged between the two boards. Push the Pico all the way in so it's flush. No pins or wires sticking out, chip fully inside.
+Push the Pico into the sockets, USB-C at the same end as the screen board's USB mark. The Pico's chips and BOOTSEL button face out, away from the screen. Push straight, never at an angle. The Trust M ends up wedged between the two boards. Push the Pico all the way in so it's flush. No pins or wires sticking out, chip fully inside.
 
 If anything sticks out, do it again. It won't fit the case.
 
@@ -99,9 +99,13 @@ If anything sticks out, do it again. It won't fit the case.
 
 ## 11. Test the boards
 
-Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. Go to wedgie.dev/test and click Test it. Don't unplug while it runs.
+Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. A brand-new Pico doesn't need BOOTSEL. Use a data cable, not a charge-only one. Go to wedgie.dev/test in Chrome and click Test it. Don't unplug while it runs.
+
+First time on this computer? The test page has a one-time setup (a Mac profile, or one command on Linux) so Chrome stops asking about every new Pico.
 
 Wait for the first 3 to go green: Board, Firmware, Chip. That means everything is connected. Unplug it. The other 3 (Shake, Buttons, Colors) come after the case is on.
+
+Chip fails? A wire is in the wrong socket (step 4), a wire came out, or the Trust M touches a Pico pin. Take it apart and check.
 
 ![Hold BOOTSEL, plug in](photos/11-bootsel.jpg)
 ![Test page](photos/11-test-page.jpg)
@@ -110,7 +114,7 @@ Wait for the first 3 to go green: Board, Firmware, Chip. That means everything i
 
 ## 12. Pick the base
 
-The base colour says what's inside:
+The base color says what's inside:
 
 - Red: Pico W with a battery (the Atomic wedgie)
 - Black: Trust M chip
@@ -154,7 +158,7 @@ Lay the lid face down at the edge of the mat, so the buttons can hang out the fr
 
 ## 17. Boards into the base
 
-Push the stacked boards, screen up, into the black base. The USB-C goes to the base's hole. The screen board lies flat on the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
+Push the stacked boards, screen up, into the black base. USB-C end first, into the base's hole, then lower the rest. Don't force it straight down. The screen board lies flat on the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
 
 ![USB centered in the hole](photos/17-usb-centered.jpg)
 ![Boards in the base](photos/17-in-base.jpg)
@@ -184,6 +188,8 @@ The wedgie shows a red FULL CONTROL warning. Press green on the wedgie to let th
 - Colors: each press shows a color. Check for scratches, dead pixels, or a line of printer plastic. Clean it off.
 
 PASS on the wedgie and the page: done. Unplug it.
+
+Need to wipe it again after the case is closed? Press BOOTSEL through the small hole in the base with a paperclip while you plug it in.
 
 <!-- TODO: Austin to confirm green is the right answer on the FULL CONTROL screen -->
 
