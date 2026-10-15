@@ -143,19 +143,28 @@ This build is Trust M, so black.
 
 ![The three bases](photos/13-bases.jpg)
 
-## 15. Peel the screen protector
+## 15. Check the USB-C fit
+
+Set the stacked boards into the base, USB-C into the hole. The USB-C port must line up perfectly with the hole.
+
+Not lined up? Push the Pico all the way into the screen board's sockets, and make sure the screen board sits flush on the base's supports.
+
+![USB-C lined up with the hole (drawing)](photos/15-usb-fit-drawing.jpg)
+![USB-C lined up with the hole](photos/15-usb-fit-check.jpg)
+
+## 16. Peel the screen protector
 
 Pull the blue tab off the screen.
 
 ![Screen protector off](photos/13-screen-protector.jpg)
 
-## 16. Case parts
+## 17. Case parts
 
 White lid, black base, joystick cap, 2 gray buttons, 1 green, 1 red.
 
 ![Case parts](photos/14-case-parts.jpg)
 
-## 17. Joystick cap
+## 18. Joystick cap
 
 Line up the square hole with the joystick and press hard until it snaps. It takes more force than you'd think.
 
@@ -165,7 +174,7 @@ Check: it stays on upside down, and it clicks up, down, left, right and in. The 
 ![The gap under the rim](photos/15-joystick-gap.jpg)
 ![Joystick cap on](photos/15-joystick-on.jpg)
 
-## 18. Buttons into the lid
+## 19. Buttons into the lid
 
 Lay the lid face down at the edge of the mat, so the buttons can hang out the front. Drop the buttons in with tweezers: green, gray, gray, red. Green sits over the screen board's A button, red over Y.
 
@@ -173,7 +182,7 @@ Lay the lid face down at the edge of the mat, so the buttons can hang out the fr
 ![Buttons placed](photos/16-buttons-placed.jpg)
 ![Lid, boards and base ready](photos/16-ready.jpg)
 
-## 19. Boards into the base
+## 20. Boards into the base
 
 Push the stacked boards, screen up, into the black base. USB-C end first, into the base's hole, then lower the rest. Don't force it straight down. The screen board lies flat on the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
 
@@ -183,7 +192,7 @@ Push the stacked boards, screen up, into the black base. USB-C end first, into t
 
 The USB-C port must sit right in the middle of the hole. If it doesn't, something is wrong: take it out and do it again before you close the case.
 
-## 20. Close the case
+## 21. Close the case
 
 Flip the base over and lower it, screen side down, into the lid (still face down with the buttons in). Line it up. Keep it upside down and press lid and base together, hard, until they snap. It's tight on purpose, so it won't fall apart.
 
@@ -192,11 +201,11 @@ Flip the base over and lower it, screen side down, into the lid (still face down
 ![Closed](photos/18-closed.jpg)
 ![USB port, closed](photos/18-closed-usb.jpg)
 
-## 21. Check the feel
+## 22. Check the feel
 
 Press every button. Push the joystick every way and straight in. Each one should click. Look for anything off: a tilted joystick, a stuck button.
 
-## 22. Full test
+## 23. Full test
 
 Plug it in. It shows "No software". Go to wedgie.dev/test and click Test only (skips the wipe and firmware).
 
@@ -223,7 +232,7 @@ Need to wipe it again after the case is closed? Press BOOTSEL through the small 
 ![PASS on the page](photos/20-pass-page.jpg)
 ![No software](photos/20-no-software.jpg)
 
-## 23. Box it
+## 24. Box it
 
 Put it in the box. Build the next one. To use it: wedgie.dev/connect.
 
