@@ -84,9 +84,13 @@ All 4 wires in, taped, holes open. Ready for the Pico.
 
 ![Header ready for the Pico](photos/09-header-ready.jpg)
 
-## 10. Stack the boards
+## 10. Plug in the chip
 
 Plug the cable into the Trust M. Lay the Trust M at an angle on the back of the screen board.
+
+<!-- TODO: photo of the Trust M plugged in, lying on the screen board -->
+
+## 11. Stack the boards
 
 Push the Pico into the sockets, USB-C at the same end as the screen board's USB mark. The Pico's chips and BOOTSEL button face out, away from the screen. Push straight, never at an angle. The Trust M ends up wedged between the two boards. Push the Pico all the way in so it's flush. No pins or wires sticking out, chip fully inside.
 
@@ -96,7 +100,7 @@ If anything sticks out, do it again. It won't fit the case.
 ![Chip wedged in between](photos/10-chip-wedged.jpg)
 ![Headers flush](photos/10-headers-flush.jpg)
 
-## 11. Test the boards
+## 12. Test the boards
 
 Hold the Pico's BOOTSEL button (tweezers help) and plug in the USB-C. Always hold it. Many Picos come with software installed and won't show up without BOOTSEL. Our pink Picos do: out of the box they flash a green light. Some come blank and work either way. Use a data cable, not a charge-only one. Go to wedgie.dev/test in Chrome and click Test it. Don't unplug while it runs.
 
@@ -111,7 +115,7 @@ Chip fails? A wire is in the wrong socket (step 4), a wire came out, or the Trus
 ![Wiping, putting MicroPython on](photos/11-test-wiping.jpg)
 ![Installing the firmware](photos/11-test-firmware.jpg)
 
-## 12. Pick the base
+## 13. Pick the base
 
 The base color says what's inside:
 
@@ -123,19 +127,19 @@ This build is Trust M, so black.
 
 ![The three bases](photos/12-bases.jpg)
 
-## 13. Peel the screen protector
+## 14. Peel the screen protector
 
 Pull the blue tab off the screen.
 
 ![Screen protector off](photos/13-screen-protector.jpg)
 
-## 14. Case parts
+## 15. Case parts
 
 White lid, black base, joystick cap, 2 gray buttons, 1 green, 1 red.
 
 ![Case parts](photos/14-case-parts.jpg)
 
-## 15. Joystick cap
+## 16. Joystick cap
 
 Line up the square hole with the joystick and press hard until it snaps. It takes more force than you'd think.
 
@@ -145,7 +149,7 @@ Check: it stays on upside down, and it clicks up, down, left, right and in. The 
 ![The gap under the rim](photos/15-joystick-gap.jpg)
 ![Joystick cap on](photos/15-joystick-on.jpg)
 
-## 16. Buttons into the lid
+## 17. Buttons into the lid
 
 Lay the lid face down at the edge of the mat, so the buttons can hang out the front. Drop the buttons in with tweezers: green, gray, gray, red. Green sits over the screen board's A button, red over Y.
 
@@ -153,14 +157,14 @@ Lay the lid face down at the edge of the mat, so the buttons can hang out the fr
 ![Buttons placed](photos/16-buttons-placed.jpg)
 ![Lid, boards and base ready](photos/16-ready.jpg)
 
-## 17. Boards into the base
+## 18. Boards into the base
 
 Push the stacked boards, screen up, into the black base. USB-C end first, into the base's hole, then lower the rest. Don't force it straight down. The screen board lies flat on the base's rails. The USB port is centered in the hole, so a cable plugs in cleanly.
 
 ![USB centered in the hole](photos/17-usb-centered.jpg)
 ![Boards in the base](photos/17-in-base.jpg)
 
-## 18. Close the case
+## 19. Close the case
 
 Flip the base over and lower it, screen side down, into the lid (still face down with the buttons in). Line it up. Keep it upside down and press lid and base together, hard, until they snap. It's tight on purpose, so it won't fall apart.
 
@@ -169,11 +173,11 @@ Flip the base over and lower it, screen side down, into the lid (still face down
 ![Closed](photos/18-closed.jpg)
 ![USB port, closed](photos/18-closed-usb.jpg)
 
-## 19. Check the feel
+## 20. Check the feel
 
 Press every button. Push the joystick every way and straight in. Each one should click. Look for anything off: a tilted joystick, a stuck button.
 
-## 20. Full test
+## 21. Full test
 
 Plug it in. It shows "No software". Go to wedgie.dev/test and click Test only (skips the wipe and firmware).
 
@@ -200,7 +204,7 @@ Need to wipe it again after the case is closed? Press BOOTSEL through the small 
 ![PASS on the page](photos/20-pass-page.jpg)
 ![No software](photos/20-no-software.jpg)
 
-## 21. Box it
+## 22. Box it
 
 Put it in the box. Build the next one. To use it: wedgie.dev/connect.
 
