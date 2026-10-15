@@ -91,8 +91,8 @@ The cable's plug is now hanging off the screen board. Plug it into the Trust M (
 
 Tuck the Trust M in on the back of the screen board, lying at an angle between the two header rows. Keep it off the pins. The Pico goes on top of it next.
 
-![Plug in the Trust M](photos/02-trust-m-plug.jpg)
-<!-- TODO: photo of the cut cable plugged into the Trust M, tucked on the screen board -->
+![Chip plugged in and tucked (drawing)](photos/10-plug-in-chip-drawing.jpg)
+<!-- drawing made from a text description; swap for a real photo when one exists -->
 
 ## 11. Stack the boards
 
