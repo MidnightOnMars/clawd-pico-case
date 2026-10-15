@@ -7,7 +7,7 @@ Photos in order. Draft. This becomes a one-page guide later.
 - Screen board (Waveshare Pico-LCD-1.3)
 - Pico (the red USB-C RP2040 board)
 - Trust M chip board
-- 4-wire cable (white, yellow, black, red) with a small plug
+- 4-wire cable (white, yellow, black, red) with a small plug: [the ones we use (Amazon)](https://www.amazon.com/dp/B0F6TYG426)
 - Case: white lid, black base, joystick cap, 4 buttons (1 green, 2 gray, 1 red)
 - Wire cutters and strippers, electrical tape, a stiff breadboard jumper wire, tweezers
 - A computer with Chrome, and a USB-C cable
