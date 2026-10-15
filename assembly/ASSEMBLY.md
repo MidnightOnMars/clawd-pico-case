@@ -60,6 +60,7 @@ Put a small piece of electrical tape over the sockets, right on top of the wires
 
 Push a stiff breadboard jumper wire through the tape into each covered socket. This opens the holes so the Pico pins fit later. The tape still holds the wires.
 
+![Poke the holes through the tape (drawing)](photos/07-poke-holes-drawing.jpg)
 ![Holes poked through the tape](photos/08-black-red-taped.jpg)
 ![Poking holes through the tape](photos/07-poke-holes-through-tape.jpg)
 
