@@ -87,12 +87,14 @@ All 4 wires in, taped, holes open. Ready for the Pico.
 
 ## 10. Plug in the chip
 
-The cable's plug is now hanging off the screen board. Plug it into the Trust M (the plug only fits one way).
+Plug the cable into the Trust M. It only fits one way.
 
-Tuck the Trust M in on the back of the screen board, lying at an angle between the two header rows. Keep it off the pins. The Pico goes on top of it next.
+Lay the Trust M face up on the back of the screen board, over the wires. The Pico goes on top of it next.
 
-![Chip plugged in and tucked (drawing)](photos/10-plug-in-chip-drawing-3.jpg)
-<!-- drawing made from a text description; swap for a real photo when one exists -->
+![Plugged in](photos/10-chip-plugged.jpg)
+![Plugged in, from the side](photos/10-chip-plugged-side.jpg)
+![Laid down on the board](photos/10-chip-laid-down.jpg)
+![Ready for the Pico](photos/10-ready-for-pico.jpg)
 
 ## 11. Stack the boards
 
@@ -100,9 +102,11 @@ Push the Pico into the sockets, USB-C at the same end as the screen board's USB 
 
 If anything sticks out, do it again. It won't fit the case.
 
+![Pico going on, chip wedged under it](photos/11-pico-going-on.jpg)
 ![Stacked, from the top](photos/10-stacked-top.jpg)
 ![Chip wedged in between](photos/10-chip-wedged.jpg)
 ![Headers flush](photos/10-headers-flush.jpg)
+![Stacked, USB end](photos/11-stacked-usb.jpg)
 
 ## 12. Test the boards
 
