@@ -22,7 +22,7 @@ Photos in order. Draft. This becomes a one-page guide later.
 
 This is just to show the fit. You plug it in for real at step 10.
 
-Wire order across the plug: white, yellow, black, red.
+Only 4 wires. Top to bottom in the photo: white, yellow, black, red. The green between black and red is the mat, not a wire.
 
 ![Cable plugged into Trust M](photos/02-cable-into-trust-m.jpg)
 
@@ -68,6 +68,7 @@ Put a small piece of electrical tape over the sockets, right on top of the wires
 
 Push a stiff breadboard jumper wire through the tape into each covered socket. This opens the holes so the Pico pins fit later. The tape still holds the wires.
 
+![Holes poked through the tape](photos/08-black-red-taped.jpg)
 ![Poking holes through the tape](photos/07-poke-holes-through-tape.jpg)
 
 ## 8. Same on the other row: black and red
@@ -86,7 +87,9 @@ All 4 wires in, taped, holes open. Ready for the Pico.
 
 ## 10. Plug in the chip
 
-Plug the cable into the Trust M. Lay the Trust M at an angle on the back of the screen board.
+The cable's plug is now hanging off the screen board. Plug it into the Trust M (the plug only fits one way).
+
+Tuck the Trust M in on the back of the screen board, lying at an angle between the two header rows. Keep it off the pins. The Pico goes on top of it next.
 
 <!-- TODO: photo of the Trust M plugged in, lying on the screen board -->
 
