@@ -22,9 +22,9 @@ Photos in order. Draft. This becomes a one-page guide later.
 
 This is just to show the fit. You plug it in for real at step 10.
 
-Only 4 wires. Top to bottom in the photo: white, yellow, black, red. The green between black and red is the mat, not a wire.
+Only 4 wires. Top to bottom in the photo: white, yellow, black, red.
 
-![Cable plugged into Trust M](photos/02-cable-into-trust-m.jpg)
+![Cable plugged into Trust M](photos/02-trust-m-plug.jpg)
 
 ## 3. Cut and strip the wires
 
@@ -48,7 +48,7 @@ Each wire pushes into a socket. No solder. Count sockets from the USB end.
 
 <!-- TODO: redraw the wiring guide as a clean diagram for the one-pager -->
 
-![Board face down with wiring guide](photos/04-board-and-wiring-guide.jpg)
+![Board face down with wiring guide](photos/04-board-and-guide.jpg)
 
 ## 5. Push in white and yellow
 
@@ -128,7 +128,7 @@ The base color says what's inside:
 
 This build is Trust M, so black.
 
-![The three bases](photos/12-bases.jpg)
+![The three bases](photos/13-bases.jpg)
 
 ## 14. Peel the screen protector
 
