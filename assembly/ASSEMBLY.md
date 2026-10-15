@@ -18,22 +18,14 @@ Photos in order. Draft. This becomes a one-page guide later.
 
 ![Cable and strippers](photos/01-cable-and-strippers.jpg)
 
-## 2. How the plug fits the Trust M
-
-This is just to show the fit. You plug it in for real at step 10.
-
-Only 4 wires. Top to bottom in the photo: white, yellow, black, red.
-
-![Cable plugged into Trust M](photos/02-trust-m-plug.jpg)
-
-## 3. Cut and strip the wires
+## 2. Cut and strip the wires
 
 Keep one plug. Cut the wires about 2 in (5 cm) from it. Strip off as much as a header socket is deep, about 5 mm (between 1/8 and 1/4 in), so the bare wire goes all the way down.
 
 ![Cut and stripped](photos/03-cut-and-stripped-a.jpg)
 ![Cut and stripped, other view](photos/03-cut-and-stripped-b.jpg)
 
-## 4. Lay out the screen board and the wiring guide
+## 3. Lay out the screen board and the wiring guide
 
 Take out the screen board. Turn it face down, sockets up, USB mark at the top.
 
@@ -50,7 +42,7 @@ Each wire pushes into a socket. No solder. Count sockets from the USB end.
 
 ![Board face down with wiring guide](photos/04-board-and-guide.jpg)
 
-## 5. Push in white and yellow
+## 4. Push in white and yellow
 
 Twist the strands at each wire tip tight, so each tip acts like one solid wire.
 
@@ -58,20 +50,20 @@ Push white into socket 3 (GND) and yellow into socket 5 (3V3) on the USB-side ro
 
 ![White and yellow in the header](photos/05-white-yellow-in-header.jpg)
 
-## 6. Tape over the wires
+## 5. Tape over the wires
 
 Put a small piece of electrical tape over the sockets, right on top of the wires, to hold them in.
 
 ![Tape over white and yellow](photos/06-tape-over-wires.jpg)
 
-## 7. Poke the holes open
+## 6. Poke the holes open
 
 Push a stiff breadboard jumper wire through the tape into each covered socket. This opens the holes so the Pico pins fit later. The tape still holds the wires.
 
 ![Holes poked through the tape](photos/08-black-red-taped.jpg)
 ![Poking holes through the tape](photos/07-poke-holes-through-tape.jpg)
 
-## 8. Same on the other row: black and red
+## 7. Same on the other row: black and red
 
 Push black into socket 6 and red into socket 7. Tape over them. Poke the holes open with the jumper wire.
 
@@ -79,11 +71,17 @@ Push black into socket 6 and red into socket 7. Tape over them. Poke the holes o
 ![Black and red in the header](photos/08-black-red-in-header.jpg)
 ![Black and red taped](photos/08-black-red-taped.jpg)
 
-## 9. Header ready
+## 8. Header ready
 
 All 4 wires in, taped, holes open. Ready for the Pico.
 
 ![Header ready for the Pico](photos/09-header-ready.jpg)
+
+## 9. How the plug fits the Trust M
+
+Only 4 wires. Top to bottom in the photo: white, yellow, black, red.
+
+![Cable plugged into Trust M](photos/02-trust-m-plug.jpg)
 
 ## 10. Plug in the chip
 
@@ -117,7 +115,7 @@ First time on this computer? The test page has a one-time setup (a Mac profile, 
 
 Wait for the first 3 to go green: Board, Firmware, Chip. That means everything is connected. Unplug it. The other 3 (Shake, Buttons, Colors) come after the case is on.
 
-Chip fails? A wire is in the wrong socket (step 4), a wire came out, or the Trust M touches a Pico pin. Take it apart and check.
+Chip fails? A wire is in the wrong socket (step 3), a wire came out, or the Trust M touches a Pico pin. Take it apart and check.
 
 ![Hold BOOTSEL, plug in](photos/11-bootsel.jpg)
 ![Test page](photos/11-test-page.jpg)
