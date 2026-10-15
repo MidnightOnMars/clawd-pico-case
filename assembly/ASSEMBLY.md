@@ -91,6 +91,7 @@ Plug the cable into the Trust M. It only fits one way.
 
 Lay the Trust M face up on the back of the screen board, over the wires. The Pico goes on top of it next.
 
+![Chip plugged in and laid down (drawing)](photos/10-chip-drawing.jpg)
 ![Plugged in](photos/10-chip-plugged.jpg)
 ![Plugged in, from the side](photos/10-chip-plugged-side.jpg)
 ![Laid down on the board](photos/10-chip-laid-down.jpg)
