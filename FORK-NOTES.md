@@ -50,6 +50,5 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## Printing
 
-See `RESIN-PRINT.md`. One Form Studio 1: Alpha Clear lid, Alpha Black base,
-Tough 2000 V2 joystick, Flexible 80A V2 buttons (x4). All four resins are
-Form Studio 1 compatible.
+See `RESIN-PRINT.md`. One Form Studio 1: Alpha Clear lid and base, Tough 2000 V2
+joystick, Flexible 80A V2 buttons (x4). All three resins are Form Studio 1 compatible.
