@@ -18,7 +18,7 @@ printers. Everything on `main` is upstream; only the files below differ.
 | `cad/v1_7_lock.py` | `HOOK` 0.5 -> 0.45 mm; closing ramp `Z_RAMP_TOP` +2.4 -> +3.0 (28 deg -> 18.8 deg from vertical); lid catch pocket 0.55 -> 0.50 deep, skin 0.85 -> 0.90 |
 | `cad/resin_v1_assemble.py` | new: assembles the resin set, uses the J24-B full-flange joystick |
 | `stl/resin-v1/` | lid, base, joystick (J24-B: full 0.40 mm flange, was 0.24 mm thin edge), button (byte-identical to tested v1.0), full-set, `resin-v1.json` (hashes) |
-| `RESIN-PRINT.md` | print sheet: material per part, PreForm steps, wash/cure |
+| `stl/resin-v1/README.md` | print sheet: material per part, PreForm steps, wash/cure |
 
 Nothing else changed: outer dimensions identical (33.04 x 58.6 x 18.67 mm), and
 the untouched parts are byte-identical to upstream's tested exports.
@@ -50,5 +50,6 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## Printing
 
-See `RESIN-PRINT.md`. One Form Studio 1: Alpha Clear lid and base, Tough 2000 V2
-joystick, Flexible 80A V2 buttons (x4). All three resins are Form Studio 1 compatible.
+See `stl/resin-v1/README.md`. One Form Studio 1: Alpha Clear lid and base, Tough
+2000 V2 joystick, Flexible 80A V2 buttons (x4). All three resins are Form Studio 1
+compatible.
