@@ -10,14 +10,15 @@ remain the tested state; this is a parallel set for resin.
 | File | Material | Copies |
 |---|---|---|
 | `lid.stl` | Alpha Clear Resin (Form Studio 1) | 1 |
-| `base.stl` | Alpha Black Resin (or Black Resin V5) | 1 |
+| `base.stl` | Alpha Clear Resin (Form Studio 1) | 1 |
 | `joystick.stl` | Tough 2000 Resin V2 (grey) | 1 |
 | `button.stl` | Flexible 80A Resin V2 (black) | 4 |
 | `full-set.stl` | single-color test set (all 7 parts, one material) | 1 |
 
-All four resins are Form Studio 1 compatible (Alpha Clear and Alpha Black are FS1-only;
-Tough 2000 V2 and Flexible 80A V2 also run on Form 4 series). One Form Studio 1 can
-print the whole set: four prints, four tank swaps.
+All three resins are Form Studio 1 compatible (Alpha Clear is FS1-only; Tough 2000 V2
+and Flexible 80A V2 also run on Form 4 series). One Form Studio 1 can print the whole
+set: three prints, three tank swaps (lid + base together in Alpha Clear, joystick,
+buttons).
 
 Suggested first build: `full-set.stl` in Tough 2000 V2 (grey) to validate fit with one
 print, then the multi-material set.
@@ -42,8 +43,11 @@ print, then the multi-material set.
 - Tough 2000 V2: wash and post-cure required; use the material preset.
 - Flexible 80A V2: wash and post-cure required; use the material preset. Keep wash
   time short for thin features (the 0.4 mm button flange can absorb IPA).
-- Clear lid: the platform-side face prints frosted. Functional as-is; wet-sand and
-  polish for a glassier look.
+- Clear lid and base: the platform-side faces print frosted (the base floor bottom and
+  the lid's outer top). Functional as-is; wet-sand and polish for a glassier look.
+  Expect visible layer lines and small support scars on the base's outer wall at the
+  catch line (the catch undersides get supports; they are invisible on a black base).
+  Wash thoroughly and dry; a clear case shows any IPA residue or dust inside.
 
 ## Fit notes
 
