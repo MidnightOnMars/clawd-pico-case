@@ -1,0 +1,32 @@
+{
+  "revision": "resin-v1",
+  "sources": {
+    "lid.stl": "stl/v1.9/lid-face-down.stl",
+    "base.stl": "stl/v1.7/base-floor-down.stl",
+    "joystick.stl": "stl/test/j24/joystick-j24-B.stl",
+    "button.stl": "stl/v1.0/button-1.stl"
+  },
+  "sha256": {
+    "base.stl": "6340c52aa5e2ed8435e5e54cab5423ce64022424ccf0877b84c6a1c75cece7b7",
+    "button.stl": "c5f2f4a37f8facaa3bd96ad248d94c85154113100936c166ac9365a7ae35d69a",
+    "full-set.stl": "8c6efd319e1bbd4f78b7a59e8390d561b720c0890adfdca03de1376eccfb9a1c",
+    "joystick.stl": "b9aef37b9e904ebaeb01d91eab3b81e4484c120a50061f5e768cff38971c0b24",
+    "lid.stl": "320b1b5c805f3ccd7dca36babd7ce32cd979a75e6a53f065cf1cf1bc0472461f"
+  },
+  "checks": {
+    "lid.stl_regenerated_matches_source": true,
+    "base.stl_regenerated_matches_source": true,
+    "joystick.stl_regenerated_matches_source": true,
+    "button.stl_regenerated_matches_source": true,
+    "button_byte_identical_to_tested_v1_0": true,
+    "joystick_is_full_flange_B": true,
+    "plate_has_seven_solids": true,
+    "plate_fits_build_volume": true
+  },
+  "print": {
+    "material": "resin (per part, see README)",
+    "layer": "material default (100 um)",
+    "supports": "PreForm auto",
+    "orientation": "lid face down, base floor down, caps flange down"
+  }
+}
