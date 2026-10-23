@@ -1,15 +1,15 @@
-> ## This is a fork for Formlabs SLA resin printers
+> ## Formlabs SLA resin edition of the Wedgie case
 >
-> Upstream: [clawdbatg/clawd-pico-case](https://github.com/clawdbatg/clawd-pico-case) @ `b7024a88` (MIT, © Austin Griffith).
+> This is an alternate version of the case model from Austin Griffith's [Wedgie](https://wedgie.dev) pocket computer project: *"a pocket computer from three off-the-shelf parts: a Pico, a screen hat, and a secure chip wedged in between. Make it a wallet, a game, or whatever you and your agent dream up."* The original case repo is [clawdbatg/clawd-pico-case](https://github.com/clawdbatg/clawd-pico-case) (MIT, © Austin Griffith); this fork adapts it to a Formlabs SLA resin printer. Everything below this note is Austin's upstream README for the tested PETG version.
 >
-> **Resin files: [`stl/resin-v1/`](stl/resin-v1/)** — print sheet: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
+> **Resin files: [`stl/resin-v1/`](stl/resin-v1/)**; print sheet: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
 >
 > What differs from upstream's tested PETG version (`stl/current/`):
 > - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber). All three resins run on one Form Studio 1 (three prints, three tanks).
 > - Joystick flange 0.24 -> 0.40 mm (upstream's own J24-B variant) and snap hook 0.5 -> 0.45 mm with a longer closing ramp, both chosen for resin.
 > - **CAD-validated, not physically tested.** Expect frosted platform-side faces (polishable) and small support scars on the clear base. Alpha Clear HDT is 57 °C: no hot cars, no months in direct sun.
 >
-> The upstream README below (PETG, `stl/current/`) is kept unchanged for reference. Don't print `stl/current/` on a resin printer.
+> Don't print `stl/current/` on a resin printer; use `stl/resin-v1/`.
 
 # clawd-pico-case
 
