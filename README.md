@@ -10,11 +10,12 @@
 > | `base.stl` | 1 | Clear | Alpha Clear Resin | Form Studio 1 |
 > | `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 | Form Studio 1 or Form 4 |
 > | `button.stl` | 4 | Black | Flexible 80A Resin V2 | Form Studio 1 or Form 4 |
-> | `full-set.stl` | 1 set | single colour (fit test) | Tough 2000 Resin V2 recommended | any |
+> | `full-set.stl` | 1 set | single colour | any one resin | any |
 >
 > All three resins are Form Studio 1 compatible: three prints, three tanks (lid + base
-> together in Alpha Clear, joystick, buttons). Suggested first build: `full-set.stl`
-> in Tough 2000 V2 to validate every fit with one print.
+> together in Alpha Clear, joystick, buttons). Print the real materials directly; the
+> snap may feel firm on the clear lid, which is expected and not a defect. If it is
+> too firm to close, say so and the ramp can be eased further.
 >
 > What differs from upstream's tested PETG version (`stl/current/`):
 > - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber).
