@@ -52,4 +52,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 See `stl/resin-v1/README.md`. One Form Studio 1: Alpha Clear lid and base, Tough
 2000 V2 joystick, Flexible 80A V2 buttons (x4). All three resins are Form Studio 1
-compatible.
+compatible. The STLs are printer-agnostic: on another Formlabs SLA printer, use a
+resin that machine supports (Alpha Clear is Form Studio 1 only; Clear Resin V5 on
+a Form 4 series). `full-set.stl` is all seven parts on one plate in one colour:
+print either it or the individual parts, not both.
