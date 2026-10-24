@@ -1,11 +1,13 @@
 > ## Formlabs SLA resin edition of the Wedgie case
 >
-> This is an alternate version of the case model from Austin Griffith's [Wedgie](https://wedgie.dev) pocket computer project: *"a pocket computer from three off-the-shelf parts: a Pico, a screen hat, and a secure chip wedged in between. Make it a wallet, a game, or whatever you and your agent dream up."* The original case repo is [clawdbatg/clawd-pico-case](https://github.com/clawdbatg/clawd-pico-case) (MIT, © Austin Griffith); this fork adapts it to a Formlabs SLA resin printer.
+> This is an alternate version of the case model from Austin Griffith's [Wedgie](https://wedgie.dev) pocket computer project: *"a pocket computer from three off-the-shelf parts: a Pico, a screen hat, and a secure chip wedged in between. Make it a wallet, a game, or whatever you and your agent dream up."* The original case repo is [clawdbotatg/clawd-pico-case](https://github.com/clawdbotatg/clawd-pico-case) (MIT, © Austin Griffith); this fork adapts it to a Formlabs SLA resin printer.
 >
 > ## Which files to print
 >
 > - **Resin printer (this fork):** [`stl/resin-v1/`](stl/resin-v1/) - the parts in the table below. Print sheet with prep steps: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
 > - **FDM/PETG printer:** the upstream files in [`stl/current/`](stl/current/README.md), documented by Austin below this note. Do not print those files on a resin printer.
+>
+> Note: Austin's "everything else in `stl/` is old test parts, don't print it" lines below predate this fork and refer to his own `stl/` history, not to `stl/resin-v1/`.
 >
 > | File | Copies | Colour | Resin |
 > |---|---|---|---|
@@ -13,20 +15,21 @@
 > | `base.stl` | 1 | Clear | Alpha Clear Resin |
 > | `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 |
 > | `button.stl` | 4 | Black | Flexible 80A Resin V2 |
-> | `full-set.stl` | 1 set | single colour | any one resin |
+> | `full-set.stl` | 1 set | single colour | any one rigid resin |
 >
 > `full-set.stl` contains all seven parts on one plate in one colour: print either it
 > or the individual parts, not both.
 >
 > The STLs are printer-agnostic geometry. The set is documented for a Form Studio 1,
-> but any Formlabs SLA printer works as long as you use a resin that machine supports
+> and any Formlabs SLA printer works as long as you use a resin that machine supports.
+> The three resins listed below are offered for the Form Studio 1 and Form 4 series
 > (Alpha Clear is Form Studio 1 only; on a Form 4 series, use Clear Resin V5 for the
-> clear parts).
+> clear parts); a Form 2 or Form 3 needs the equivalent older-generation resins.
 >
 > Three prints, three tank swaps (lid + base in Alpha Clear, joystick, buttons). Print
 > the real materials directly; the snap may feel firm on the clear lid, which is
-> expected and not a defect. If it is too firm to close, say so and the ramp can be
-> eased further.
+> expected and not a defect. If it is too firm to close, open an issue on this fork
+> and the ramp can be eased further.
 >
 > What differs from upstream's tested PETG version (`stl/current/`):
 > - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber).

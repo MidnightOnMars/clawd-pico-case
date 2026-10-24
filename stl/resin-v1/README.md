@@ -12,21 +12,22 @@ change log: [`FORK-NOTES.md`](../../FORK-NOTES.md).
 | `base.stl` | 1 | Clear | Alpha Clear Resin |
 | `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 |
 | `button.stl` | 4 | Black | Flexible 80A Resin V2 |
-| `full-set.stl` | 1 set | single colour | any one resin |
+| `full-set.stl` | 1 set | single colour | any one rigid resin |
 
 All three resins are Form Studio 1 compatible, and one Form Studio 1 prints the whole
 case in three prints, three tank swaps: (1) lid + base in Alpha Clear, (2) joystick
 in Tough 2000, (3) buttons x4 in Flexible 80A. The STLs are printer-agnostic
 geometry: any Formlabs SLA printer works as long as you use a resin that machine
-supports (Alpha Clear is Form Studio 1 only; on a Form 4 series, use Clear Resin V5
-for the clear parts). `full-set.stl` contains all seven parts on one plate in one
-colour: print either it or the individual parts, not both.
+supports. The three resins listed are offered for the Form Studio 1 and Form 4
+series (Alpha Clear is Form Studio 1 only; on a Form 4 series, use Clear Resin V5
+for the clear parts); a Form 2 or Form 3 needs the equivalent older-generation
+resins. `full-set.stl` contains all seven parts on one plate in one colour: print
+either it or the individual parts, not both.
 
-A separate fit test is unnecessary: the fits are the upstream-tested geometry (only
-the snap and joystick flange changed, both CAD-validated). Print the real materials
-directly, starting with the Alpha Clear lid + base. The snap may feel firm on the
-clear lid; that is expected and not a defect. If it is too firm to close, the ramp
-can be eased further.
+No separate test print is needed: the button and the mating fits are the
+upstream-tested geometry. The eased snap is the one change that is not physically
+tested (CAD-validated only), and the first Alpha Clear lid + base print is that
+test: close it, and if it is too firm, the ramp can be eased further.
 
 ## PreForm (per print)
 
@@ -51,16 +52,17 @@ can be eased further.
 - Clear lid and base: the platform-side faces print frosted (the base floor bottom
   and the lid's outer top). Functional as-is; wet-sand and polish for a glassier
   look. Expect visible layer lines and small support scars on the base's outer wall
-  at the catch line (the catch undersides get supports; they are invisible on a
-  black base). Wash thoroughly and dry; a clear case shows any IPA residue or dust
-  inside.
+  at the catch line (the catch undersides get supports; on the clear base these are
+  visible but small). Wash thoroughly and dry; a clear case shows any IPA residue or
+  dust inside.
 
 ## Fit notes
 
-- The design's inter-part clearances are 0.15-0.30 mm. Resin holds ~+/-0.06 mm on
-  33-80 mm features (Form 4 design guide), so fits will be at least as good as PETG,
-  probably slightly snugger. The mating gap is 0.2 mm; if the lid is stiff to close,
-  it is the snap, not the fit (below).
+- The design's inter-part clearances are 0.15-0.30 mm. Form 4 generation dimensional
+  tolerance is ±0.2% (lower limit ±0.06 mm) on 31-80 mm features, so at the case's
+  58.6 mm width expect about ±0.12 mm (Form 4 design guide, Grey V5, XY features).
+  Fits will be at least as good as PETG, probably slightly snugger. The mating gap
+  is 0.2 mm; if the lid is stiff to close, it is the snap, not the fit (below).
 - Snap closure: catches now hook 0.45 mm with an 18.8 deg closing ramp (was 0.5 mm /
   28 deg) so the clear lid skirt flexes less and closes with less force. It may still
   feel firm. Open with the pry slot.
