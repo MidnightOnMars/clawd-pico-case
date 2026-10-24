@@ -4,8 +4,21 @@
 >
 > **Resin files: [`stl/resin-v1/`](stl/resin-v1/)**; print sheet: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
 >
+> | File | Copies | Colour | Resin | Printer |
+> |---|---|---|---|---|
+> | `lid.stl` | 1 | Clear | Alpha Clear Resin | Form Studio 1 |
+> | `base.stl` | 1 | Clear | Alpha Clear Resin | Form Studio 1 |
+> | `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 | Form Studio 1 or Form 4 |
+> | `button.stl` | 4 | Black | Flexible 80A Resin V2 | Form Studio 1 or Form 4 |
+> | `full-set.stl` | 1 set | single colour | any one resin | any |
+>
+> All three resins are Form Studio 1 compatible: three prints, three tanks (lid + base
+> together in Alpha Clear, joystick, buttons). Print the real materials directly; the
+> snap may feel firm on the clear lid, which is expected and not a defect. If it is
+> too firm to close, say so and the ramp can be eased further.
+>
 > What differs from upstream's tested PETG version (`stl/current/`):
-> - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber). All three resins run on one Form Studio 1 (three prints, three tanks).
+> - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber).
 > - Joystick flange 0.24 -> 0.40 mm (upstream's own J24-B variant) and snap hook 0.5 -> 0.45 mm with a longer closing ramp, both chosen for resin.
 > - **CAD-validated, not physically tested.** Expect frosted platform-side faces (polishable) and small support scars on the clear base. Alpha Clear HDT is 57 °C: no hot cars, no months in direct sun.
 >
