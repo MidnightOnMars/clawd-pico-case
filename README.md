@@ -18,9 +18,9 @@
 > | `full-set.stl` | 1 set | single colour | any one rigid resin |
 >
 > `full-set.stl` contains all seven parts on one plate in one colour: print either it
-> or the individual parts, not both. For a first run, print the longer list in the
-> print sheet: a second lid and base, both joystick caps at three scales, and rigid
-> spare buttons.
+> or the individual parts, not both. The print sheet gives two lists for a first run.
+> The full list is the ideal: a second lid and base, both joystick caps at three
+> scales, and rigid spare buttons. The short list is one case, for when time is tight.
 >
 > The STLs are printer-agnostic geometry. The set is documented for a Form Studio 1,
 > and any Formlabs SLA printer works as long as you use a resin that machine supports.

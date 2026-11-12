@@ -6,29 +6,27 @@ change log: [`FORK-NOTES.md`](../../FORK-NOTES.md).
 
 **Treat the first print as a fit test.** Every fit in this case was tuned on an FDM
 printer in PETG, and some of them depend on the process. They will not come out the
-same on an SLA printer. The print list below carries the spares and variants that
-cover them, and [First fit](#first-fit) says what to check and what to do when a fit
-is off.
+same on an SLA printer. The full print list below carries the spares and variants
+that cover them, and [First fit](#first-fit) says what to check and what to do when a
+fit is off.
 
-## One case
+## Operator brief
 
-| File | Per case | Colour | Resin |
-|---|---|---|---|
-| `lid.stl` | 1 | Clear | Alpha Clear Resin |
-| `base.stl` | 1 | Clear | Alpha Clear Resin |
-| `joystick-j24-a.stl` or `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 |
-| `button.stl` | 4 | Black | Flexible 80A Resin V2 |
+1. **Print the full list if there is time, the short list if not.** Both are under
+   [What to print](#what-to-print). Either way it is three prints, one per resin, on
+   one Form Studio 1.
+2. **One rule:** the joystick caps go on supports, never flange down directly on the
+   build platform. Orientation and supports are otherwise your call. See
+   [Print setup](#print-setup).
+3. **Alpha Clear gets the default post-cure**, not max strength. See
+   [Post-processing](#post-processing).
+4. Everything from [First fit](#first-fit) down is for whoever assembles the case.
 
-The two joystick files are the same cap with different flanges. `joystick-j24-a.stl`
-is J24-A, the cap Austin chose in PETG: its flange thins to 0.24 mm over the outer
-1 mm. `joystick.stl` is J24-B: 0.40 mm throughout. Austin printed both on 2026-10-02
-and found B "a little bit too clunky" ([log](../../prints/2026-10-02-joystick-j24.md)).
-B is in this set because a 0.24 mm edge is close to the 0.2 mm minimum wall in
-Formlabs' design guide. Print both and choose by feel.
+## What to print
 
-## Print list for the first run
+Colours: clear lid and base, dark grey joystick caps, black buttons.
 
-Three prints, three resins, one Form Studio 1.
+### Full list: two lids and bases, with spares (the ideal first run)
 
 | Print | Resin | File | Copies |
 |---|---|---|---|
@@ -39,7 +37,40 @@ Three prints, three resins, one Form Studio 1.
 | 2 | Tough 2000 Resin V2 | `button.stl` | 4, rigid spares |
 | 3 | Flexible 80A Resin V2 | `button.stl` | 6: four plus two spare |
 
-Why the extras:
+### Short list: one case (if time is tight)
+
+| Print | Resin | File | Copies |
+|---|---|---|---|
+| 1 | Alpha Clear Resin | `lid.stl` | 1 |
+| 1 | Alpha Clear Resin | `base.stl` | 1 |
+| 2 | Tough 2000 Resin V2 | `joystick-j24-a.stl` | 1 |
+| 2 | Tough 2000 Resin V2 | `joystick.stl` | 1 |
+| 3 | Flexible 80A Resin V2 | `button.stl` | 4 |
+
+The short list keeps both joystick caps because choosing between them is part of the
+test.
+
+Choosing between the lists:
+
+- The full list should not mean longer prints. Formlabs says a
+  [Form 4](https://formlabs.com/uk/3d-printers/form-4/) takes about as long to print
+  a full platform as a single part, and the Form Studio 1 also cures a whole layer
+  at once. PreForm's time estimate will show it. What the full list costs is
+  handling: more parts to set up, wash, cure and trim.
+- If only some of the extras fit, add them to the short list in this order: the four
+  scaled joystick caps (tiny, and the fit most likely to be off), then the four rigid
+  buttons, then the second lid and base.
+- The short list makes one complete case with no spares. If its lid cracks or its
+  joystick caps sit loose, the fix is a second print.
+
+The two joystick files are the same cap with different flanges. `joystick-j24-a.stl`
+is J24-A, the cap Austin chose in PETG: its flange thins to 0.24 mm over the outer
+1 mm. `joystick.stl` is J24-B: 0.40 mm throughout. Austin printed both on 2026-10-02
+and found B "a little bit too clunky" ([log](../../prints/2026-10-02-joystick-j24.md)).
+B is in this set because a 0.24 mm edge is close to the 0.2 mm minimum wall in
+Formlabs' design guide. Print both and choose by feel.
+
+Why the extras in the full list:
 
 - **Second lid and base.** The clear lid is the part most likely to mark or crack on
   its first close. A second set also lets one lid be fitted as printed and the other
@@ -60,9 +91,9 @@ Why the extras:
   pull out.
 
 `full-set.stl` is all seven parts on one plate in one colour, with the J24-B joystick,
-for a single rigid resin. Print it or the list above, not both. Its joystick cap sits
-flange down, so do not print the plate directly on the build platform (see Print
-setup).
+for a single rigid resin. Print it or one of the lists above, not both. Its joystick
+cap sits flange down, so do not print the plate directly on the build platform (see
+Print setup).
 
 All three resins are listed by Formlabs for the Form Studio 1. Alpha Clear is Form
 Studio 1 only; on a Form 4 series use Clear Resin V5 for the clear parts. Formlabs
@@ -152,7 +183,7 @@ file and calipers. Start with the empty shells, before any electronics go in.
    wall and press 0.15 mm into the base tongue. Austin added them in PETG to stop
    rattle, where they give. In resin they may not. Take about 0.1 mm off each rib tip
    with a flat needle file or a blade and try again. With two lids, keep one as
-   printed for comparison.
+   printed for comparison. With one, go a little at a time.
 3. **If it seats but does not click, or sits proud at the seam, it is the catches.**
    They have 0.04 mm of free play by design, less than one layer. Trim the flat
    underside of each of the six catches with a blade, a little at a time.
@@ -175,7 +206,7 @@ file and calipers. Start with the empty shells, before any electronics go in.
    100 %. Then try it in the closed case: a direction push must not also click the
    centre. Expect J24-B to touch the lid sooner than J24-A.
 9. **Buttons.** Fit the four rubber caps. If one pulls out through the lid or the
-   click feels vague, use the rigid spares. If the buttons sit pressed and will not
+   click feels vague, use the rigid spares if they were printed. If the buttons sit pressed and will not
    click freely, the pocket above them is too shallow (a lid printed face down on the
    platform loses 0.11 mm there): take about 0.1 mm off the flange face of the rigid
    spares on fine paper and use those.
@@ -207,9 +238,14 @@ what fit in [`prints/2026-11-12-resin-v1-first-article.md`](../../prints/2026-11
   of the Wedgie Plus test base is 0.04 mm too deep.
 - Alpha Clear heat deflection is 57 C (default cure): keep the case out of hot cars
   and prolonged direct sun. Indoor and handheld use is fine.
-- Board: the base is the v1.7 base, for the USB-C or micro-USB Pico. The RP2040-Plus
-  needs a different base: upstream's Atomic Wedgie base (with a battery) or its
-  Wedgie Plus test base (no battery, 2026-11-10). Neither has a resin version here.
+- Board: the base is the v1.7 base. It was drawn and measured for a pink USB-C RP2040
+  Pico clone with soldered headers (the PINK rows in
+  [`MEASUREMENTS.md`](../../MEASUREMENTS.md): board 51.04 x 20.82 mm, USB-C shell
+  8.87 x 3.08 mm standing 2.47 mm past the board edge, one button beside the socket).
+  Other USB-C clones can differ, so check yours against those rows. A micro-USB Pico
+  also fitted the PETG case in Austin's test of 2026-10-07. The RP2040-Plus needs a
+  different base: upstream's Atomic Wedgie base (with a battery) or its Wedgie Plus
+  test base (no battery, 2026-11-10). Neither has a resin version here.
 
 ## Files
 
