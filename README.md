@@ -4,21 +4,23 @@
 >
 > ## Which files to print
 >
-> - **Resin printer (this fork):** [`stl/resin-v1/`](stl/resin-v1/) - the parts in the table below. Print sheet with prep steps: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
-> - **FDM/PETG printer:** the upstream files in [`stl/current/`](stl/current/README.md), documented by Austin below this note. Do not print those files on a resin printer.
+> - **Resin printer (this fork):** [`stl/resin-v1/`](stl/resin-v1/) - the parts in the table below. Print sheet with the first-run print list, setup notes and fit checklist: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
+> - **FDM/PETG printer:** the upstream files in [`stl/current/`](stl/current/README.md), documented by Austin below this note. Do not print those files on a resin printer. Upstream added to its PETG instructions on 2026-11-10, after this fork was taken: for PETG, read the current version in [Austin's repo](https://github.com/clawdbotatg/clawd-pico-case), including his [joystick print settings](https://github.com/clawdbotatg/clawd-pico-case/blob/main/stl/current/JOYSTICK-PRINT.md).
 >
 > Note: Austin's "everything else in `stl/` is old test parts, don't print it" lines below predate this fork and refer to his own `stl/` history, not to `stl/resin-v1/`.
 >
-> | File | Copies | Colour | Resin |
+> | File | Per case | Colour | Resin |
 > |---|---|---|---|
 > | `lid.stl` | 1 | Clear | Alpha Clear Resin |
 > | `base.stl` | 1 | Clear | Alpha Clear Resin |
-> | `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 |
+> | `joystick-j24-a.stl` or `joystick.stl` | 1 | Dark grey | Tough 2000 Resin V2 |
 > | `button.stl` | 4 | Black | Flexible 80A Resin V2 |
 > | `full-set.stl` | 1 set | single colour | any one rigid resin |
 >
 > `full-set.stl` contains all seven parts on one plate in one colour: print either it
-> or the individual parts, not both.
+> or the individual parts, not both. For a first run, print the longer list in the
+> print sheet: a second lid and base, both joystick caps at three scales, and rigid
+> spare buttons.
 >
 > The STLs are printer-agnostic geometry. The set is documented for a Form Studio 1,
 > and any Formlabs SLA printer works as long as you use a resin that machine supports.
@@ -26,15 +28,24 @@
 > (Alpha Clear is Form Studio 1 only; on a Form 4 series, use Clear Resin V5 for the
 > clear parts); a Form 2 or Form 3 needs the equivalent older-generation resins.
 >
-> Three prints, three tank swaps (lid + base in Alpha Clear, joystick, buttons). Print
-> the real materials directly; the snap may feel firm on the clear lid, which is
-> expected and not a defect. If it is too firm to close, open an issue on this fork
-> and the ramp can be eased further.
+> Three prints, one per resin (lid + base in Alpha Clear, joystick caps, buttons).
+>
+> **CAD-validated, not physically tested. Treat the first print as a fit test.** The
+> fits were tuned on an FDM printer in PETG, and some will not come out the same in
+> resin. Close the empty case before the electronics go in, and do not force a lid
+> that will not seat: the print sheet's First fit section says what to check and what
+> to ease.
+>
+> **Do not print the joystick caps flange down directly on the build platform.**
+> PreForm merges the first 0.75 mm of an on-platform print into one shape, which
+> would turn the cap's 0.40 mm flange into a 0.75 mm slab and reshape its socket
+> mouth. Raise the caps on supports. Details in the print sheet's Print setup section.
 >
 > What differs from upstream's tested PETG version (`stl/current/`):
 > - Whole clear enclosure: lid and base in Alpha Clear Resin; joystick in Tough 2000 V2 (dark grey); buttons in Flexible 80A V2 (black rubber).
-> - Joystick flange 0.24 -> 0.40 mm (upstream's own J24-B variant) and snap hook 0.5 -> 0.45 mm with a longer closing ramp, both chosen for resin.
-> - **CAD-validated, not physically tested.** Expect frosted platform-side faces (polishable) and small support scars on the clear base. Alpha Clear HDT is 57 °C: no hot cars, no months in direct sun.
+> - Snap hook 0.5 -> 0.45 mm with a longer closing ramp, chosen for resin.
+> - Two joystick caps. `joystick-j24-a.stl` is J24-A, the cap Austin chose in PETG, unchanged. `joystick.stl` is J24-B, the same cap with a full 0.40 mm flange where A thins to 0.24 mm. Austin printed B and found it "a little bit too clunky"; it is here because A's edge is thin for resin. Print both.
+> - Expect frosted platform-side faces (polishable) and small support scars on the clear parts. Alpha Clear HDT is 57 °C: no hot cars, no months in direct sun.
 >
 > Everything below this note is Austin's upstream README for the tested PETG version.
 
