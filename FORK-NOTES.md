@@ -77,10 +77,13 @@ cover them.
 | USB opening | 0.10 mm under the connector | MEASUREMENTS V1-USB | connector or plug may foul |
 | Button retention | lips 0.075 and 0.20 mm | `cad/params.py` (CAP_FLANGE_W, CAP_FLANGE_D) | fine for a rigid cap; a rubber cap may pull out |
 
-The eased snap also runs against upstream's latest finding: on 2026-11-10 Austin
-noted that the PETG cases get easier to open with use and began testing a base with
-a 0.54 mm hook. If the resin case opens too easily, put `HOOK` back to 0.5 and keep
-the longer ramp.
+The eased snap also runs against upstream's latest finding. On 2026-11-10 Austin
+noted that the PETG cases get easy to open after a while and began testing the
+Wedgie Plus base, which holds harder in three ways: a 0.54 mm hook, catches 6.5 mm
+wide (were 6.0), and a long-side tongue 0.8 mm thicker on the inside, which
+upstream's `DESIGN.md` calls the bigger lever. If the resin case opens too easily,
+put `HOOK` back to 0.5 and keep the longer ramp. `RECESS` follows `HOOK`, so that
+regenerates the lid as well as the base. A stiffer tongue changes the base only.
 
 The export orientation is inherited from FDM too, and for one part it must not be
 used as the print orientation. The joystick cap is exported flange down. Formlabs
@@ -92,6 +95,34 @@ closes to about 2.3 mm against a 2.94 mm collar. Computed from the meshes on
 2026-11-12, not test-printed. The lid loses 0.11 mm over the button pocket and
 0.05 mm over the joystick pocket the same way; the base and the buttons are
 unaffected. The print sheet carries the table.
+
+## Upstream since the fork point
+
+Checked 2026-11-12: upstream `main` is at `677b0e7`, six commits past the fork point,
+all from 2026-11-10. None is merged here.
+
+| Upstream change | Commits | Files of the resin set touched |
+|---|---|---|
+| PETG joystick print sheet, `stl/current/JOYSTICK-PRINT.md`, with warnings in both READMEs and the assembly guide | `de48274`, `b9c1b1e`, `f6d08bd` | None. Its lessons are used, see below. |
+| Wedgie Plus base, a PETG test for the RP2040-Plus without a battery (`cad/wedgie_plus_base.py`, `stl/wedgie-plus/`) | `8a7833b`, `8820ac8`, `677b0e7` | None. Its design note bears on the snap, see above. |
+
+Upstream has not changed the CAD or the STLs of any part this variant uses
+(`cad/v1_7_lock.py`, `cad/v1_4_rounded.py`, the joystick scripts, `stl/current/*.stl`).
+
+Taken from the joystick sheet: the cap is the part to print in numbers and pick by
+fit (six or more, firm on the stem with no wobble). Its socket is sized by the
+first layers, which is one more reason the resin sheet keeps it off the build
+platform and prints a scale ladder. Anything left on the flange keeps it from
+sitting flat under the lid, so support nubs there are trimmed flush. The slicer
+settings themselves are FDM-only.
+
+If upstream is merged later: a trial merge of `677b0e7` into this branch on
+2026-11-12 was clean. Two things to know first. The Wedgie Plus base is drawn
+against PETG lids, whose pockets are 0.55 mm deep. The resin lid's pockets are
+0.50 mm, so its 0.54 mm hook is 0.04 mm too deep for a resin lid. And
+`cad/wedgie_plus_base.py` takes the v1.7 base and `Z_RAMP_TOP` from
+`cad/v1_7_lock.py`, which carries the resin constants here, so this fork's CAD
+would not rebuild upstream's `wedgie-plus-base.stl`. Use upstream's committed STL.
 
 ## Rebuild
 
