@@ -13,6 +13,15 @@ nothing in `stl/resin-v1/` has been printed before. Print sheet and first-fit st
 | 2 | Tough 2000 Resin V2 | `stl/resin-v1/button.stl` | `c5f2f4a3...` | 4 |
 | 3 | Flexible 80A Resin V2 | `stl/resin-v1/button.stl` | `c5f2f4a3...` | 6 |
 
+This is the print sheet's full list, the ideal. If time is tight the short list is
+printed instead: one lid, one base, both joystick caps at 100 %, four rubber buttons.
+
+Board for the fit test: a pink USB-C RP2040 Pico clone with soldered headers
+([Amazon B0GQRMVT4P](https://www.amazon.com/dp/B0GQRMVT4P)). Its listing photo shows
+the same layout as the PINK board in `MEASUREMENTS.md`: one button beside the USB-C
+socket and the `Pico (c) 2022` silkscreen. It has not been measured against the PINK
+rows.
+
 Layer height: material default. Orientation and supports: the operator's choice,
 except that the joystick caps must not sit flange down directly on the build platform
 (print sheet, Print setup). Record what was used below.
@@ -21,6 +30,7 @@ except that the joystick caps must not sit flange down directly on the build pla
 
 Fill in after the fit test. A planned test is not evidence of a successful print.
 
+- List printed (full or short) and any extras added:
 - Date printed, printer, PreForm version:
 - Orientation and supports used for each part:
 - Post-cure used for the clear parts:

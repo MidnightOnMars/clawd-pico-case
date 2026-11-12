@@ -19,7 +19,7 @@ differ.
 | `cad/v1_7_lock.py` | `HOOK` 0.5 -> 0.45 mm; closing ramp `Z_RAMP_TOP` +2.4 -> +3.0 (28 deg -> 18.8 deg from vertical); lid catch pocket 0.55 -> 0.50 deep, skin 0.85 -> 0.90 |
 | `cad/resin_v1_assemble.py` | new: assembles the resin set, uses the J24-B full-flange joystick, and copies upstream's J24-A in beside it |
 | `stl/resin-v1/` | lid, base, joystick (J24-B: full 0.40 mm flange, was 0.24 mm thin edge), joystick-j24-a (J24-A, byte-identical to upstream's tested cap), button (byte-identical to tested v1.0), full-set, `resin-v1.json` (hashes) |
-| `stl/resin-v1/README.md` | print sheet: first-run print list, what each part needs, wash/cure, first-fit checklist |
+| `stl/resin-v1/README.md` | print sheet: operator brief, full and short print lists, what each part needs, wash/cure, first-fit checklist |
 
 Nothing else changed: the assembled case is still 33.04 x 58.6 x 25.64 mm (18.67 mm
 is the height of the base part alone). `button.stl` and `joystick-j24-a.stl` are
@@ -65,8 +65,8 @@ are in `stl/resin-v1/` so the first run can settle it.
 
 Found in review on 2026-11-12, before the first print. Every fit below was tuned by
 trial on an FDM printer in PETG and is unchanged in this variant. On an SLA printer
-each can come out different. The print sheet's first-run list and First fit steps
-cover them.
+each can come out different. The print sheet's full print list and First fit steps
+cover them. Its short one-case list leaves the spares out.
 
 | Fit | Designed value | Source | Risk in resin |
 |---|---|---|---|
