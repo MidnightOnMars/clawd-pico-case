@@ -46,7 +46,11 @@ Why the extras:
   with its ribs eased (see First fit).
 - **Joystick scale ladder.** The cap grips a 1.86 mm square stem with a 1.90 mm
   socket. That worked in PETG, where small holes print tight. On an SLA printer the
-  socket may come out nearer its drawn size and sit loose. Scaling the whole cap in
+  socket may come out nearer its drawn size and sit loose. Upstream's
+  [PETG joystick sheet](https://github.com/clawdbotatg/clawd-pico-case/blob/main/stl/current/JOYSTICK-PRINT.md)
+  (2026-11-10) shows how sensitive this fit is: there the socket's size depends on
+  the first-layer settings, six or more caps are printed, and one is picked by fit
+  on the stem. Scaling the whole cap in
   PreForm (Size, Scale) gives 1.90, 1.87 and 1.84 mm sockets. Do not go below 97 %:
   the 3.1 mm socket mouth has to clear a 2.94 mm collar at the base of the stem, and
   at 97 % only 0.03 mm per side is left. Tell the caps apart by flange diameter:
@@ -101,8 +105,10 @@ Three things to weigh before printing a part directly on the platform:
   | Base, floor down | Plain floor, constant section for 1.2 mm. | No change. |
   | Button, flange down | Flange 0.80 mm, constant section. | No change. |
 
-  So the joystick caps go on supports, clear of the platform, whichever way up. The
-  base and the buttons are not changed by the merge. The lid is a trade: on the
+  So the joystick caps go on supports, clear of the platform, whichever way up. Trim
+  every support nub on a cap's flange flush: upstream found that anything left on
+  the flange keeps it from sitting flat under the lid. The base and the buttons are
+  not changed by the merge. The lid is a trade: on the
   platform it gets a frosted face, a squared edge and slightly shallower pockets; on
   supports it gets touchpoints.
 - **The lid and base are five-sided shells.** Face down or floor down on the platform,
@@ -189,13 +195,21 @@ what fit in [`prints/2026-11-12-resin-v1-first-article.md`](../../prints/2026-11
   guide, Grey V5, XY features). Not checked for the Form Studio 1.
 - Snap closure: the catches hook 0.45 mm with an 18.8 deg closing ramp (PETG: 0.5 mm,
   28 deg), a longer and gentler ramp so the clear skirt closes with less force.
-  Austin noted on 2026-11-10 that the PETG cases get easier to open with use and is
-  testing a deeper hook. If the resin case opens too easily, the hook can go back
-  to 0.5 mm.
+  Upstream noted on 2026-11-10 that PETG cases get easy to open after a while, and is
+  testing a base that holds harder: a 0.54 mm hook, wider catches and a stiffer
+  tongue. This variant went the other way, so watch how firmly the resin case stays
+  shut. If it is too weak there are two fixes. Raising `HOOK` in `cad/v1_7_lock.py`
+  deepens the lid pockets with it, so the lid and the base are both reprinted.
+  Stiffening the tongue, which upstream calls the bigger lever, changes the base
+  only.
+- Upstream bases do not drop into this lid. Its pockets are 0.50 mm deep (PETG lids:
+  0.55 mm), so upstream's 0.5 mm hooks have no spare in them, and the 0.54 mm hook
+  of the Wedgie Plus test base is 0.04 mm too deep.
 - Alpha Clear heat deflection is 57 C (default cure): keep the case out of hot cars
   and prolonged direct sun. Indoor and handheld use is fine.
 - Board: the base is the v1.7 base, for the USB-C or micro-USB Pico. The RP2040-Plus
-  (Atomic Wedgie) needs a different base.
+  needs a different base: upstream's Atomic Wedgie base (with a battery) or its
+  Wedgie Plus test base (no battery, 2026-11-10). Neither has a resin version here.
 
 ## Files
 

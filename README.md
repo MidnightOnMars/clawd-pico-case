@@ -5,7 +5,7 @@
 > ## Which files to print
 >
 > - **Resin printer (this fork):** [`stl/resin-v1/`](stl/resin-v1/) - the parts in the table below. Print sheet with the first-run print list, setup notes and fit checklist: [`stl/resin-v1/README.md`](stl/resin-v1/README.md); change log: [`FORK-NOTES.md`](FORK-NOTES.md).
-> - **FDM/PETG printer:** the upstream files in [`stl/current/`](stl/current/README.md), documented by Austin below this note. Do not print those files on a resin printer.
+> - **FDM/PETG printer:** the upstream files in [`stl/current/`](stl/current/README.md), documented by Austin below this note. Do not print those files on a resin printer. Upstream added to its PETG instructions on 2026-11-10, after this fork was taken: for PETG, read the current version in [Austin's repo](https://github.com/clawdbotatg/clawd-pico-case), including his [joystick print settings](https://github.com/clawdbotatg/clawd-pico-case/blob/main/stl/current/JOYSTICK-PRINT.md).
 >
 > Note: Austin's "everything else in `stl/` is old test parts, don't print it" lines below predate this fork and refer to his own `stl/` history, not to `stl/resin-v1/`.
 >
