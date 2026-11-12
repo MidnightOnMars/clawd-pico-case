@@ -1,6 +1,9 @@
 """RESIN-V1: assemble the resin variant set (v1.9 lid + v1.7 base, resin snap,
 J24-B full-flange joystick, S2 buttons). Mirrors cad/current.py but exports to
-stl/resin-v1/ and uses the B joystick variant.
+stl/resin-v1/ and uses the B joystick variant. Also copies upstream's tested
+J24-A cap in as joystick-j24-a.stl, so both variants print from one folder.
+Run cad/v1_7_lock.py and cad/v1_9.py first: this script copies the lid and base
+they write to stl/v1.7 and stl/v1.9 (see FORK-NOTES.md, Rebuild).
 Run: .venv/bin/python cad/resin_v1_assemble.py
 """
 import hashlib
@@ -20,6 +23,7 @@ GAP = 5.0  # V1-PLATE
 PARTS = {'lid.stl': 'stl/v1.9/lid-face-down.stl',
          'base.stl': 'stl/v1.7/base-floor-down.stl',
          'joystick.stl': 'stl/test/j24/joystick-j24-B.stl',
+         'joystick-j24-a.stl': 'stl/test/j24/joystick-j24-A.stl',  # upstream's tested pick, unchanged
          'button.stl': 'stl/v1.0/button-1.stl'}
 
 
@@ -41,6 +45,8 @@ def main():
         tmp.unlink()
     checks['button_byte_identical_to_tested_v1_0'] = (DIR / 'button.stl').read_bytes() == \
         (ROOT / 'stl/v1.0/button-1.stl').read_bytes()
+    checks['joystick_a_byte_identical_to_tested_current'] = (DIR / 'joystick-j24-a.stl').read_bytes() == \
+        (ROOT / 'stl/current/joystick.stl').read_bytes()
     checks['joystick_is_full_flange_B'] = J24.cap(False).bounding_box().size.Z > 0  # sanity
     lb = lid.bounding_box().size
     placed = [lid, Pos(lb.X + GAP, 0, 0) * base, Pos(J.FLANGE / 2, lb.Y + GAP + J.FLANGE / 2, 0) * cap]
@@ -56,7 +62,8 @@ def main():
     (DIR / 'resin-v1.json').write_text(json.dumps(dict(
         revision=REV, sources=PARTS, sha256=files, checks=checks,
         print=dict(material='resin (per part, see README)', layer='material default (100 um)',
-                   supports='PreForm auto', orientation='lid face down, base floor down, caps flange down')),
+                   supports='operator choice, see README',
+                   orientation='exported lid face down, base floor down, caps flange down; print orientation is the operator choice, except joystick caps: not flange down directly on the build platform')),
         indent=2) + '\n')
     print(json.dumps(dict(checks=checks, files=files,
                           plate=[round(v, 2) for v in tuple(plate.bounding_box().size)]), indent=2))
